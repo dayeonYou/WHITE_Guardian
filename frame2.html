@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/frame3_style.css">
+    <link rel="stylesheet" href="./css/frame2_style.css">
+    <script defer src="./js/frame2.js"></script>
+
+</head>
+
+<body>
+
+    <!-- <div id="main-content"> -->
+    <div class="start-button" onclick="start(this)">START</div>
+
+    <div class="instruction">
+        <div class="circle-image" onclick="open_instruction()">
+            <div class="circle_text">?</div>
+        </div>
+    </div>
+
+    <div id="instruction-board">
+        <div class="instruction-title">프로그램 관리 설명서</div>
+        <img id="close_instruction" src="./images/close_instruction.png">
+        <img id="next-instruction" src="./images/next_instruction.png">
+        <img id="back-instruction" src="./images/back-instruction.png">
+        <img id="instruction-img">
+        <div class="content-wrapper">
+            <div id="instruction-content"></div>
+        </div>
+
+    </div>
+
+    <div class="content-title">화이트리스트 프로그램 관리</div>
+    <div class="icon-wrapper">
+        <img class="program-icon" src="./images/program-icon.png">
+        <div class="notice">관리할 프로그램을 선택하세요</div>
+    </div>
+
+
+    <div id="program-manage-frame">
+        <div class="program-small-frame">
+            <div class="small-group" onclick="programClick(this)">
+                <img class="img" src="./images/powerpoint.png">
+                <div class="programTxt">파워포인트</div>
+                <div class="programTxt2">.ppt</div>
+            </div>
+
+            <img class="x_img" src="./images/x_img.png" onclick="deleteProgram(event)">
+        </div>
+
+        <!-- <div class="program-small-frame">
+                        <div class="small-group" onclick="programClick(this)">
+                            <img class="img" src="./images/word.png">
+                            <div class="programTxt">워드</div>
+                            <div class="programTxt2">.doc</div>
+                        </div>
+        
+                        <img class="x_img" src="./images/x_img.png" onclick="deleteProgram(event)">
+                    </div> -->
+
+        <div class="add-program" onclick="inputExtension()">+</div>
+    </div>
+
+    <div id="totalframe2">
+
+        <div class="aiblock">
+            <div class="aiMiniFrame">
+                <img class="aiIconFrame" src="./images/aiGenerate1.png">
+                <div class="aitext">AI 맞춤 모드</div>
+            </div>
+        </div>
+
+        <div class="rectangleFrame">
+
+            <div class="listbarFrame">
+                <div class="accesstext">접근 허용 목록</div>
+                <img class="listGraFrame" src="./images/RectangleGradation.png">
+            </div>
+
+            <div id="access-list-container"></div>
+
+            <div class="addExeFrame" onclick="inputProgramPath()">+</div>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- </div> -->
+
+    <dialog id="addExtension">
+        <h1>추가할 확장자명을 입력하세요</h1>
+        <input type="text" id="extensionText">
+        <div class="button-wrapper">
+            <button id="cancel">취소</button>
+            <button id="enter">확인</button>
+        </div>
+    </dialog>
+
+    <dialog id="addProgram">
+        <h1>허용할 프로그램의 경로를 입력하세요.<h1>
+                <input type="text" id="ProgramText">
+                <div class="button-wrapper">
+                    <button id="cancel2">취소</button>
+                    <button id="enter2">확인</button>
+                </div>
+    </dialog>
+
+</body>
+
+</html>

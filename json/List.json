@@ -1,0 +1,15 @@
+{
+  "Title": "Windows Ransomware Detection Program_MiniFilter",
+  "Description": "Using JsonParsing to detect the malware on file",
+  ".ppt": [
+    "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Accessories\\notepad.exe",
+    "C:\\Program Files\\WindowsApps\\Microsoft.WindowsNotepad_11.2302.16.0_x64__8wekyb3d8bbwe\\Notepad\\Notepad.exe"
+  ],
+  ".doc": [
+    "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Chrome.exe",
+  "C:\\Program Files\\Java\\jdk-20\\bin\\javaw.exe",
+  "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\111.0.1661.51\\msedgewebview2.exe",
+  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2302.4.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe"
+  ]
+}

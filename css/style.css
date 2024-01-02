@@ -1,0 +1,24 @@
+body{
+    overflow: hidden;
+}
+/* 프로그램 메인 화면 */
+.main-board #main-content{
+    position: absolute;
+    width: 80%;
+    height: 90%;
+    top: 10%;
+    left: 20%;
+}
+
+#main-content .content-title{
+    position: absolute;
+    width: auto;
+    top: 10%;
+    left: 10%;
+    font-family: "Noto Sans-DisplaySemiBold", Helvetica;
+    font-weight: 600;
+    color: #2c2c2c;
+    font-size: 1.1em;
+    line-height: normal;
+    white-space: nowrap;
+}
